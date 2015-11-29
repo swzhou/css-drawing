@@ -83,6 +83,68 @@
 }
                 </code></pre>
             </section>
+
+            <section>
+                <h2>CSS盒子模型</h2>
+                <img src="images/css-boxing-model.jpg" style="width: 80%;height: auto;" alt="盒子模型"/>
+            </section>
+
+            <section>
+                <h2>带边框的矩形</h2>
+
+                <div class="canvas">
+                    <div class="rectangle-with-border"/>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.rectangle {
+    width: 150px;
+    height: 100px;
+    background-color: transparent;
+    border: 10px solid green;;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>不同的边框</h2>
+
+
+                <div class="canvas">
+                    <div class="rectangle-with-different-border"/>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.rectangle {
+    ...
+    border-top: 10px solid green;
+    border-right: 20px solid yellow;
+    border-bottom: 30px solid red;
+    border-left: 40px solid blue;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>内部大小缩小到极致</h2>
+
+
+                <div class="canvas">
+                    <div class="rectangle-with-different-border-and-zero-size"/>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.rectangle {
+    ...
+    border-top: 70px solid green;
+    border-right: 80px solid yellow;
+    border-bottom: 90px solid red;
+    border-left: 100px solid blue;
+    width: 0;
+    height: 0;
+}
+                </code></pre>
+            </section>
+
+
+            </section>
         </section>
 
     </div>
