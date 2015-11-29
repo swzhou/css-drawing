@@ -59,7 +59,6 @@
                 <li>基本概念</li>
                 <li>基本图形</li>
                 <li>曲线图形</li>
-                <li>组合图形</li>
                 <li>炫酷图形</li>
             </ul>
         </section>
@@ -482,8 +481,66 @@ div.cut-diamond:after {
                 </code></pre>
             </section>
 
+            <section>
+                <h2>太极</h2>
+
+                <div class="canvas-top">
+                    <div class="taiji"></div>
+                </div>
+                <pre class="fragment" style="height: 330px;"><code class="css" style="height: 330px;" data-trim contenteditable>
+.taiji {
+    height: 98px;
+    width: 48px;
+    background-color: #eee;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 50px solid blue;
+    border-right: 2px solid blue;
+    border-radius: 50px;
+    position: relative;
+}
+.taiji:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -26px;
+    background: #eee;
+    border: 18px solid blue;
+    border-radius: 24px;
+    width: 13px;
+    height: 13px;
+}
+.taiji:after {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: -24px;
+    background: blue;
+    border: 18px solid #eee;
+    border-radius: 24px;
+    width: 13px;
+    height: 13px;
+}
+                </code></pre>
+            </section>
+
         </section>
 
+        <section>
+            <h2>炫酷图形</h2>
+            <ul>
+                <li>
+                    <a href="http://a.singlediv.com/">a single div</a>
+                </li>
+                <li>
+                    <a href="http://www.bootcss.com/p/font-awesome/">font awesome</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>谢谢！</h1>
+        </section>
     </div>
 
 </div>

@@ -216,3 +216,38 @@ div.canvas-top {
     top:-135px;
     left:-25px;
 }
+
+.canvas-top .taiji {
+    margin: 10px auto;
+    height: 98px;
+    width: 48px;
+    background-color: #eee;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 50px solid blue;
+    border-right: 2px solid blue;
+    border-radius: 50px;
+    position: relative;
+}
+.canvas-top .taiji:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -26px;
+    background: #eee;
+    border: 18px solid blue;
+    border-radius: 24px;
+    width: 13px;
+    height: 13px;
+}
+.canvas-top .taiji:after {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: -24px;
+    background: blue;
+    border: 18px solid #eee;
+    border-radius: 24px;
+    width: 13px;
+    height: 13px;
+}
