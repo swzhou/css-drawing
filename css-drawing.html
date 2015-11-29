@@ -96,11 +96,11 @@
                     <div class="rectangle-with-border"/>
                 </div>
                 <pre class="fragment"><code class="css" data-trim contenteditable>
-.rectangle {
+.rectangle-with-border {
     width: 150px;
     height: 100px;
     background-color: transparent;
-    border: 10px solid green;;
+    border: 10px solid green;
 }
                 </code></pre>
             </section>
@@ -113,7 +113,7 @@
                     <div class="rectangle-with-different-border"/>
                 </div>
                 <pre class="fragment"><code class="css" data-trim contenteditable>
-.rectangle {
+.rectangle-with-different-border {
     ...
     border-top: 10px solid green;
     border-right: 20px solid yellow;
@@ -131,7 +131,7 @@
                     <div class="rectangle-with-different-border-and-zero-size"/>
                 </div>
                 <pre class="fragment"><code class="css" data-trim contenteditable>
-.rectangle {
+.rectangle-with-different-border-and-zero-size {
     ...
     border-top: 70px solid green;
     border-right: 80px solid yellow;
@@ -143,6 +143,141 @@
                 </code></pre>
             </section>
 
+            <section>
+                <h2>透明边框 - 三角形</h2>
+
+                <div class="canvas">
+                    <div class="triangle" />
+                </div>
+                <pre><code class="css" data-trim contenteditable>
+.triangle {
+    ...
+    border-top: 70px solid green;
+    border-right: 80px solid transparent;
+    border-bottom: 90px solid transparent;
+    border-left: 100px solid transparent;
+    width: 0;
+    height: 0;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>更多三角形</h2>
+
+                <div class="canvas">
+                    <div class="triangle-topleft" />
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.triangle {
+    ...
+    border-top: 60px solid green;
+    border-right: 70px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 70px solid green;
+    width: 0;
+    height: 0;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>梯形</h2>
+
+                <div class="canvas">
+                    <div class="trapezoid" />
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.trapezoid {
+    ...
+    width: 100px;
+    height: 0;
+    background-color: transparent;
+    border-top: 100px solid green;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    border-left: 90px solid transparent;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>钻石 - V1</h2>
+
+                <div class="canvas-top">
+                    <div class="diamond">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+                <pre class="fragment" style="height: 330px;"><code style="height: 330px;" class="css" data-trim contenteditable>
+.diamond .top {
+    border-top: 0 solid transparent;
+    border-bottom: 25px solid green;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+}
+.diamond .bottom {
+    border-top: 70px solid green;
+    border-bottom: 0 solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 0;
+    height: 0;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>CSS伪元素</h2>
+                <pre><code class="css" data-trim contenteditable>
+selector.class:pseudo-element {property:value;}
+                </code></pre>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+div.cut-diamond:before {
+    content: "你好";
+}
+
+div.cut-diamond:after {
+    content: "谢谢";
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>钻石 - V2</h2>
+
+                <div class="canvas-top">
+                    <div class="cut-diamond"></div>
+                </div>
+                <pre class="fragment" style="height: 330px;"><code style="height: 330px;" class="css" data-trim contenteditable>
+.cut-diamond {
+    border-top: 0 solid transparent;
+    border-bottom: 25px solid green;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 0 50px 20px;
+}
+
+.cut-diamond:after {
+    content: "";
+    position: absolute;
+    border-top: 70px solid green;
+    border-bottom: 0 solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 0;
+    height: 0;
+    top: 25px;
+    left: -25px;
+}
+                </code></pre>
+            </section>
 
             </section>
         </section>

@@ -45,3 +45,89 @@ div.canvas {
     border-bottom: 80px solid red;
     border-left: 90px solid blue;
 }
+
+.canvas .triangle {
+    margin: 50px auto;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 60px solid green;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 90px solid transparent;
+}
+
+.canvas .triangle-topleft {
+    margin: 50px auto;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 60px solid green;
+    border-right: 70px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 70px solid green;
+}
+
+.canvas .trapezoid {
+    margin: 50px auto;
+    width: 100px;
+    height: 0;
+    background-color: transparent;
+    border-top: 100px solid green;
+    border-right: 70px solid transparent;
+    border-bottom: 0;
+    border-left: 90px solid transparent;
+}
+
+div.canvas-top {
+    margin-top: 20px;
+    margin-left: 10%;
+    padding-top: 20px;
+    width: 80%;
+    height: 200px;
+    background-color: white;
+}
+
+.canvas-top .diamond .top {
+    margin: 50px auto 0;
+    border-top: 0 solid transparent;
+    border-bottom: 25px solid green;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+}
+
+.canvas-top .diamond .bottom {
+    margin: 0 auto 50px;
+    border-top: 70px solid green;
+    border-bottom: 0 solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.canvas-top .cut-diamond {
+    border-top: 0 solid transparent;
+    border-bottom: 25px solid pink;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px auto 90px;
+}
+
+.canvas-top .cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-top: 70px solid pink;
+    border-bottom: 0 solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
