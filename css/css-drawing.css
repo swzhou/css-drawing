@@ -131,3 +131,88 @@ div.canvas-top {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
 }
+
+.canvas .rounded-rectangle {
+    margin: 50px auto;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 20px solid green;
+    border-radius: 20px;
+}
+
+.canvas .ellipse {
+    margin: 50px auto;
+    width: 0;
+    height: 0;
+    border-top: 20px solid green;
+    border-left: 40px solid green;
+    border-bottom: 20px solid green;
+    border-right: 40px solid green;
+    border-top-left-radius: 40px 20px;
+    border-top-right-radius: 40px 20px;
+    border-bottom-left-radius: 40px 20px;
+    border-bottom-right-radius: 40px 20px;
+}
+
+.canvas .top-half-circle {
+    margin: 50px auto;
+    width: 0;
+    height: 0;
+    border-top: 50px solid green;
+    border-left: 50px solid green;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid green;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.canvas-top .up-capsule {
+    margin: 10px auto;
+    width: 0;
+    height: 0;
+    border-top: 150px solid green;
+    border-left: 50px solid green;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid green;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.canvas-top .heart {
+    margin: 10px auto;
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-left: 50px solid red;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    -webkit-transform: rotate(-45deg);
+}
+.canvas-top .heart:after {
+    content: "";
+    margin: 10px auto;
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-left: 50px solid red;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    top:-135px;
+    left:-25px;
+}

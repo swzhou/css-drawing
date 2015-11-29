@@ -47,7 +47,7 @@
             <h1>CSS画图</h1>
 
             <p>
-                <small>By 周世伟
+                <small>周世伟
                 </small>
             </p>
         </section>
@@ -322,7 +322,166 @@ div.cut-diamond:after {
             </section>
 
         <section>
-            
+
+            <section>
+                <h1>曲线图形</h1>
+            </section>
+
+            <section>
+                <h2>圆角矩形</h2>
+
+                <div class="canvas">
+                    <div class="rounded-rectangle"/>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.rounded-rectangle {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 20px solid green;
+    border-radius: 20px;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>CSS属性</h2>
+                <quote>border-radius</quote>
+                <img src="images/border-radius.png" alt=""/>
+            </section>
+
+            <section>
+                <h2>CSS属性</h2>
+                <quote>border-radius</quote>
+                <pre><code class="css" data-trim contenteditable>
+.rounded-rectangle {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    border: 40px solid green;
+    border-top-left-radius: 40px 20px;
+    border-top-right-radius: 40px 20px;
+    border-bottom-left-radius: 40px 20px;
+    border-bottom-right-radius: 40px 20px;
+}
+                </code></pre>
+<div class="fragment"
+     style="width: 80px;
+        height: 40px;
+        background-color: transparent;
+        border: 40px solid green;
+        border-top-left-radius: 40px 20px;
+        border-top-right-radius: 40px 20px;
+        border-bottom-left-radius: 40px 20px;
+        border-bottom-right-radius: 40px 20px;">
+</div>
+            </section>
+
+            <section>
+                <h2>椭圆形</h2>
+
+                <div class="canvas">
+                    <div class="ellipse"/>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.ellipse {
+    width: 0;
+    height: 0;
+    border-top: 20px solid green;
+    border-left: 40px solid green;
+    border-bottom: 20px solid green;
+    border-right: 40px solid green;
+    border-top-left-radius: 40px 20px;
+    border-top-right-radius: 40px 20px;
+    border-bottom-left-radius: 40px 20px;
+    border-bottom-right-radius: 40px 20px;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>半圆</h2>
+
+                <div class="canvas">
+                    <div class="top-half-circle"/>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.top-half-circle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid green;
+    border-left: 50px solid green;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid green;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>半个胶囊</h2>
+                <div class="canvas-top">
+                    <div class="up-capsule"></div>
+                </div>
+                <pre class="fragment"><code class="css" data-trim contenteditable>
+.up-capsule {
+    width: 0;
+    height: 0;
+    border-top: 150px solid green;
+    border-left: 50px solid green;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid green;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>红心</h2>
+                <div class="canvas-top">
+                    <div class="heart"></div>
+                </div>
+                <pre class="fragment" style="height: 330px;"><code class="css" style="height: 330px;" data-trim contenteditable>
+.heart {
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-left: 50px solid red;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    -webkit-transform: rotate(-45deg);
+}
+.heart:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-left: 50px solid red;
+    border-bottom: 0 solid transparent;
+    border-right: 50px solid red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    top:-135px;
+    left:-25px;
+}
+                </code></pre>
+            </section>
+
         </section>
 
     </div>
