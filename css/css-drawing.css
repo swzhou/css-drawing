@@ -1,0 +1,17 @@
+div.canvas {
+    margin-top: 20px;
+    margin-left: 10%;
+    padding-top: 20px;
+    width: 80%;
+    height: 500px;
+    background-color: white;
+}
+
+.canvas .rectangle {
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 0;
+    padding: 0;
+}
